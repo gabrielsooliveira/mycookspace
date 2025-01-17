@@ -12,8 +12,9 @@ import { Link } from '@inertiajs/vue3';
     <nav class="navbar navbar-expand-lg mt-2" aria-label="Ninth navbar example">
         <div class="container-xl">
             <a class="navbar-brand fw-bold" href="#">My<span class="text-primary">Cook</span>Space</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="nav-link link-secondary d-lg-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-label="botão de menu">
+                <font-awesome-icon :icon="['fas', 'bars']" size="lg"/>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarsExample07XL">
