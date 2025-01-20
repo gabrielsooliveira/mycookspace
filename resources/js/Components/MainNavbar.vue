@@ -11,7 +11,7 @@ import { Link } from '@inertiajs/vue3';
 
     <nav class="navbar navbar-expand-lg mt-2" aria-label="Ninth navbar example">
         <div class="container-xl">
-            <a class="navbar-brand fw-bold" href="#">My<span class="text-primary">Cook</span>Space</a>
+            <a class="navbar-brand fw-bold" href="#">My<span class="text-primary">Healthy</span>Food</a>
 
             <button class="nav-link link-secondary d-lg-none d-block" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-label="botão de menu">
                 <font-awesome-icon :icon="['fas', 'bars']" size="lg"/>
@@ -27,12 +27,35 @@ import { Link } from '@inertiajs/vue3';
                     </li>
                 </ul>
 
-                <form>
+                <form class="me-2">
                     <div class="input-group">
                         <input class="form-control" type="text" placeholder="Procurar uma receita..." aria-label="Search">
                         <button class="btn btn-secondary py-2 px-2 fs-7" type="submit"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
                     </div>
                 </form>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link link-primary" aria-current="page" href="#">
+                            <font-awesome-icon icon="fa-brands fa-square-facebook" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-primary" aria-current="page" href="#">
+                            <font-awesome-icon icon="fa-brands fa-instagram" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-primary" aria-current="page" href="#">
+                            <font-awesome-icon icon="fa-brands fa-tiktok" />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-primary" aria-current="page" href="#">
+                            <font-awesome-icon icon="fa-brands fa-youtube" />
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

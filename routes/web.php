@@ -7,9 +7,13 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/explorar', function () {
-    return inertia('Explorer/Index');
+    return inertia('Article/Explorer');
 })->name('explorer');
 
+Route::get('/artigo/{article}', function () {
+    return inertia('Article/Index');
+})->name('article');
+
 Route::get('/explorar/{meet}', function () {
-    return inertia('Explorer/List');
+    return inertia('Article/List');
 })->name('explorer-list');
